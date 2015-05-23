@@ -1,0 +1,981 @@
+/*********************************/
+/****      All properties     ****/
+/*********************************/
+                                        /* l'étoile signifie all et concerne les propriétés utilisées sur l'ensemble du site */
+* {
+    margin: 0;                          /* Concerne la marge extérieure des éléments */
+    padding: 0;                         /* Concerne la marge interne des éléments */
+}
+*::-moz-selection {                     /* les attributs avec le préfixe "moz" concernera*/                                    /*mozilla firefox, selection concerne le surlignement*/                                    /*des elements */
+    background: blue;                /* Concerne la couleur de fond */
+    color: #ffffff;                     /* Concerne la couleur du texte */
+}
+*::selection {
+    background: blue;
+    color: #ffffff;
+}
+body {                                  /* Concerne l'ensemble du body */
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+    font-family: calibri;               /* Concerne la police du texte */
+}
+a:active {                              /* "a" signifie les liens, et ":active" est */                                    /*l'évènement utilisé lorsqu'on clique sur lien */
+    outline-style: none;                /* Cela concerne le style du contour d'un élément, 
+                                        l'attribut "none" signifie l'annulation de la propriété */
+}
+a
+{
+    text-decoration: none;              /* Permet de spécifier les décorations d'un mot par*/                                /*exemple si le mot est souligné ou surligné. */
+}
+:focus {                                /* ":focus" c'est l'évènement qui s'exécute lorsqu'on*/                                    /*clique sur un champ de texte*/
+    outline-style: none;
+}
+#content
+{
+    background: #fafafa;
+}
+::-webkit-input-placeholder { color:grey; }
+::-moz-placeholder { color:grey; } /* firefox 19+ */
+:-ms-input-placeholder { color:grey; } /* ie */
+input:-moz-placeholder { color:grey; }
+/*********************************/
+/****    header properties    ****/
+/*********************************/
+#header_content
+{
+    border-bottom: 2px solid rgb(213, 213, 213);    /* Bordure du bas */
+    background: #ffffff;
+}
+#coolline
+{
+    background: linear-gradient(to right, #a7a7a7, #c0c0c0) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 3px;
+}
+header /*En tête*/
+{
+    width: 1200px;                      /* Définit la largeur de l'élément */
+    margin: 0 auto;                     /* Centre horizontalement l'élément par rapport à son*/
+                                        /* élément parent */
+}
+#logo /* Logo page d'accueil */
+{
+    width: 64px;
+    margin: 10px 0 0 5px;
+}
+nav ul li, #deco li /* Onglets */
+{
+    display: inline-block;              /* display permet de spécifier la manière dont un*/                                /* élément est affiché."inline-block" correspond à un*/                                /*élément inline avec un comportement bloc (css2) */
+    vertical-align: top;                /*permet de gérer l'alignement vertical du texte.*/                                /*identifiant. "top" = en haut*/
+    color: #59d1e1;
+    padding: 5px 20px;
+}
+nav ul li:hover, #deco li:hover /* :hover permet de spécifier toutes les propriétés liées à un élément survolé*/
+{
+    color: aqua;
+}
+nav ul .active
+{
+    color: #f5df4b;
+}
+nav {
+    display: inline-block;
+    margin: 25px 0 0;
+    text-align: right;
+    vertical-align: top;
+    width: 817px;
+}
+#deco li
+{
+    margin-top: 25px;
+}
+#deco
+{
+    display: inline-block;
+    vertical-align: top;
+}
+#case_panier {
+    background-color: #e3e6fa;
+    border: 1px solid #9e9cfd;
+    color: black;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 13px 10px 13px 33px;
+    position: absolute;
+    right: 15px;
+    top: 19px;
+}
+#case_panier:hover
+{
+    background-color: #9fc1ee;
+    border: 1px solid #554da9;
+    color: #554da9;
+}
+#case_panier > img {
+    bottom: 11px;
+    display: inline-block;
+    left: 7px;
+    padding: 0;
+    position: absolute;
+}
+iframe
+{
+    display: block;
+    margin: 20px auto;
+}
+video
+{
+    display: block;
+    margin: 20px auto;
+}
+/*********************************/
+/****    footer properties    ****/
+/*********************************/
+#foot
+{
+    background-color: #f0f0f0;
+    height: 400px;
+}
+footer
+{
+    width: 960px;
+    margin: 0 auto;
+}
+#tablefoot
+{
+    float: left;
+    padding: 45px 0;
+}
+
+
+footer img {
+    float: right;
+    margin-bottom: 23px;
+    margin-right: 148px;
+    margin-top: 85px;
+}
+
+#presentement {
+    color: #808080;
+    float: right;
+    font-family: Calibri;
+    font-size: 12px;
+    margin: 0 86px 0 0;
+    padding: 0;
+    width: 200px;
+}
+
+#presentement li {
+    display: block;
+}
+
+
+footer p {
+    color: #686868;
+    font-family: Calibri,Arial;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+#tablefoot td {
+    padding: 70px 40px;
+}
+
+.footitem a {
+    color: #59d1e1;
+    text-decoration: none;
+}
+
+.footitem li {
+    color: grey;
+    display: block;
+    font-family: Calibri;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+/*********************************/
+/****  Inscription properties  ****/
+/*********************************/
+#client_conteneur
+{
+    width:  960px;
+    margin: 20px auto;
+}
+#client_conteneur h2
+{
+    color: #8e8e8e;
+    font-family: Tahoma;
+    font-weight: 500;
+}
+#client_conteneur input[type="text"], #client_conteneur input[type="email"],
+#client_conteneur input[type="password"]
+{
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    color: #808080;
+    font-family: webly;
+    font-size: 19px;
+    height: 27px;
+    padding: 0 5px;
+    width: 193px;
+}
+#client_conteneur input[type="text"]:focus, #client_conteneur input[type="email"]:focus,
+#client_conteneur input[type="password"]:focus
+{
+    border: 1px solid #14beff
+}
+#client_conteneur select {
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    font-family: webly;
+    font-size: 17px;
+    height: 28px;
+    margin: 0;
+    padding: 0 0 0 3px;
+    width: 205px;
+}
+#client_conteneur option {
+    font-size: 16px;
+    margin: 3px 11px;
+}
+#client_conteneur input[type="submit"]
+{
+    background-color: #14beff;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 7px;
+}
+#client_conteneur input[type="submit"]:hover
+{
+    background-image: linear-gradient(#7bc9ff, #14beff);
+}
+#ancien_utilisateur
+{
+    background-color: #ffffff;
+    border: 5px solid #e9e9e9;
+    display: inline-block;
+    height: 300px;
+    overflow: auto;
+    margin: 20px 0;
+    vertical-align: top;
+    width: 465px;
+}
+#nouvel_utilisateur
+{
+    background-color: #ffffff;
+    border: 5px solid #e9e9e9;
+    display: inline-block;
+    height: 300px;
+    margin: 20px 0 0 5px;
+    vertical-align: top;
+    width: 465px;
+}
+#nouvel_utilisateur h3, #ancien_utilisateur h3, #inscription h3
+{
+    color: #14beff;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 10px 10px 0;
+}
+#nouvel_utilisateur p, #ancien_utilisateur p, #inscription p
+{
+    border-bottom: 1px solid #14beff;
+    color: #14beff;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0 10px;
+    padding-bottom: 5px;
+}
+#nouvel_utilisateur table, #ancien_utilisateur table, #inscription table
+{
+    margin: 20px auto 0;
+}
+#nouvel_utilisateur td, #ancien_utilisateur td
+{
+    color: grey;
+    height: 35px;
+    width: 140px;
+}
+#inscription td
+{
+    color: grey;
+    height:  35px;
+    width:  200px;
+}
+#inscription input[type="radio"]
+{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#nouvel_utilisateur th, #ancien_utilisateur th, #inscription th
+{
+    height: 71px;
+}
+#ancien_utilisateur input[type="checkbox"]
+{
+    float: right;
+    margin: 0 10px;
+}
+#forget td {
+    height: 20px;
+}
+#forget a
+{
+    color: #59d1e1;
+}
+#forget a:hover
+{
+    text-decoration: underline;
+}
+#inscription_conteneur
+{
+    width:  960px;
+    margin: 20px auto;
+}
+#inscription_conteneur h2
+{
+    color: #8e8e8e;
+    font-family: Tahoma;
+    font-weight: 500;
+}
+#inscription
+{
+    background-color: #ffffff;
+    border: 5px solid #e9e9e9;
+    margin: 20px 0;
+    width: 960px;
+}
+#inscription .amessage
+{
+    border: medium none;
+    margin: 0 auto 15px;
+    text-align: center;
+    width: 740px;
+}
+/*********************************/
+/****     Compte properties   ****/
+/*********************************/
+#client_compte
+{
+    width: 1100px;
+    margin: 20px auto;
+}
+#client_compte h2
+{
+    color: #8e8e8e;
+    font-family: Tahoma;
+    font-weight: 500;
+}
+#client_compte input[type="text"], #client_compte input[type="email"],
+#client_compte input[type="password"]
+{
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    color: #808080;
+    font-family: webly;
+    font-size: 19px;
+    height: 27px;
+    padding: 0 5px;
+    width: 193px;
+}
+#client_compte input[type="text"]:focus, #client_compte input[type="email"]:focus,
+#client_compte input[type="password"]:focus
+{
+    border: 1px solid #14beff
+}
+#client_compte select {
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    font-family: webly;
+    font-size: 17px;
+    height: 28px;
+    margin: 0;
+    padding: 0 0 0 3px;
+    width: 205px;
+}
+#client_compte option {
+    font-size: 16px;
+    margin: 3px 11px;
+}
+#client_compte input[type="submit"]
+{
+    background-color: #14beff;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 7px;
+}
+#client_compte input[type="submit"]:hover
+{
+    background-image: linear-gradient(#7bc9ff, #14beff);
+}
+#mon_compte
+{
+    background-color: #ffffff;
+    margin: 20px 0;
+    width: 1080px;
+    border: 10px solid #e9e9e9;
+    background: #e9e9e9;
+}
+#mon_compte #list_compte
+{
+    background-color: #e9e9e9;
+    border-bottom: 10px solid #e9e9e9;
+    border-right: 10px solid #e9e9e9;
+    display: inline-block;
+    vertical-align: top;
+    height: inherit;
+    padding: 0;
+}
+#mon_compte #list_compte li
+{
+    background-color: #4db8db;
+    border-radius: 2px;
+    color: white;
+    display: block;
+    font-family: Calibri;
+    font-size: 18px;
+    height: 37px;
+    line-height: 37px;
+    margin-bottom: 2px;
+    text-align: center;
+    width: 240px;
+}
+#mon_compte #list_compte li:hover
+{
+    background-color: #82cbeb;
+}
+#mon_compte #list_compte .active
+{
+    background-color: #82cbeb;
+}
+#mon_compte #second
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 830px;
+    height: inherit;
+    background: white;
+}
+#mon_compte #second h3
+{
+    background-color: #4db8db;
+    border-radius: 2px;
+    color: white;
+    display: block;
+    font-family: Calibri;
+    font-size: 18px;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 10px;
+    width: 820px;
+}
+#mon_compte #second table
+{
+    margin: 20px auto;
+}
+#mon_compte #second form td
+{
+    color: grey;
+    height: 35px;
+    width: 140px;
+}
+#mon_compte #second input[type="radio"]
+{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#mon_compte #second th
+{
+    height: 71px;
+}
+/*********Tableau Historique**********/
+#mon_compte #table_historique
+{
+    border: 1px solid #8cb3c1;
+    border-collapse: collapse;
+    text-align: center;
+}
+#mon_compte #table_historique th
+{
+    height: 50px;
+    font-family: Webly;
+    font-size: 23px;
+    font-weight: lighter;
+    color: #6398ab;
+}
+#mon_compte #table_historique thead td
+{
+    border: 1px solid #8cb3c1;
+    color: #6398ab;
+    padding: 0 10px;
+}
+
+#mon_compte #table_historique tbody td
+{
+    padding: 0 10px;
+    border: 1px solid #8cb3c1;
+    color: grey;
+}
+#mon_compte #conteneur_obj
+{
+    margin: 40px auto;
+    width: 450px;
+}
+#mon_compte #conteneur_obj .obj_esp
+{
+    background: none repeat scroll 0 0 #e7ffff;
+    border: 4px solid #83bceb;
+    color: #639ccb;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+#mon_compte #second h2
+{
+    text-align:center;
+    margin-top:15px;
+}
+/*********************************/
+/****     Categories properties   ****/
+/*********************************/
+#produit_conteneur
+{
+    width: 1200px;
+    margin: 10px auto;
+}
+#produit_conteneur #left
+{
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    width: 180px;
+    margin-right: 10px;
+    height: 710px;
+    outline: 1px solid #dcdcdc;
+    box-shadow: 0 0 9px #e9e9e9;
+}
+#produit_conteneur #left #title_genre
+{
+    border-bottom: 1px solid lightgray;
+    color: gray;
+    margin: 10px;
+    padding: 13px 0;
+    text-align: center;
+}
+#produit_conteneur #center
+{
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    width: 620px;
+    margin-right: 10px;
+    outline: 1px solid #dcdcdc;
+    height: 710px;
+    box-shadow: 0 0 9px #e9e9e9;
+    overflow: auto;
+}
+#produit_conteneur #right
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+}
+#produit_conteneur #right #top
+{
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    outline: 1px solid #dcdcdc;
+    width: inherit;
+    height: 400px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 9px #e9e9e9;
+}
+#produit_conteneur #right #bottom
+{
+    display: inline-block;
+    outline: 1px solid #dcdcdc;
+    vertical-align: top;
+    background: white;
+    width: inherit;
+    box-shadow: 0 0 9px #e9e9e9;
+    height: 300px;
+}
+.descateg
+{
+    color: gray;
+    margin: 10px;
+    padding: 5px 0;
+    border-radius: 10px;
+    transition: background 0.7s ease 0s;
+    text-align: center;
+}
+.descateg:hover
+{
+    background: rgba(220, 220, 220, 0.5);
+    transition: background 0.7s ease 0s;
+}
+#produit_conteneur #left .active
+{
+    background: rgba(220, 220, 220, 1);
+    border-radius: 10px;
+    color: WHITE;
+}
+#produit_conteneur #center #research_barre {
+    border: 1px solid lightgray;
+    border-radius: 5px 0 0 5px;
+    height: 25px;
+    margin: 10px 0px 10px 10px;
+    vertical-align: top;
+    width: 525px;
+    padding: 0 10px;
+    border-right: none;
+    font-size: 16px;
+}
+#produit_conteneur #center #research_barre:focus {
+    border-color: #1b7eff;
+}
+#produit_conteneur #center #research_bouton
+{
+    background: none repeat scroll 0 0 #1b7eff;
+    border: 1px solid #1b7eff;
+    border-radius: 0 5px 5px 0;
+    height: 27px;
+    margin: 10px 10px 10px 0;
+    vertical-align: top;
+    width: 37px;
+}
+#produit_conteneur #center #product_contain
+{
+    height: 645px;
+    margin: 0 auto;
+    width: 555px;
+}
+#center #product_contain ul
+{
+    text-align: center;
+}
+#produit_conteneur #center .obj
+{
+    border: 5px solid #ffffff;
+    display: inline-block;
+    margin: 12px;
+    outline: 1px solid #bdbdbd;
+    transition: all 0.7s ease 0s;
+    vertical-align: top;
+    width: 150px;
+}
+#produit_conteneur #center .obj:hover
+{
+    transition: all 0.7s ease 0s;
+    border: 5px solid lightgray;
+}
+#produit_conteneur #center .select
+{
+    border: 5px solid lightgray;
+}
+#produit_conteneur #center .obj .title
+{
+    color: #727272;
+    font-size: 18px;
+    margin: 4px;
+}   
+#produit_conteneur #center .obj .price
+{
+    font-size: 14px;
+    text-align: right;
+    color: #ce5043;
+}
+#produit_conteneur #center .obj img
+{
+    vertical-align: top;
+}
+#produit_conteneur #center .abs
+{
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    font-size: 18px;                         /* Mettre le texte en italic */
+    padding: 150px 0;
+    border-bottom: 4px dotted lightgrey;
+}
+#pagination li
+{
+    border-color: lightgray -moz-use-text-color lightgray lightgray;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    color: #5a86c8;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 7px 13px;
+}
+
+
+#produit_conteneur #right #top .proch {
+    border: medium none;
+    margin: 120px 0 0 23px;
+    outline: medium none;
+    width: 333px;
+}
+
+#produit_conteneur #right #top img {
+    border: 5px solid #ffffff;
+    margin: 13px;
+    outline: 1px solid #bdbdbd;
+}
+
+#produit_conteneur #right #top h4 {
+    color: grey;
+    display: inline-block;
+    font: 20px webly;
+    margin-top: 20px;
+    vertical-align: top;
+    width: 260px;
+}
+
+#produit_conteneur #right #top p {
+    color: grey;
+    font: 16px webly;
+    margin: 0 18px;
+    text-align: justify;
+    max-height: 190px;
+    overflow: auto;
+    padding-right: 10px;
+}
+#top > form {
+    display: inherit;
+}
+#produit_conteneur #right #top #button_achat {
+    background: none repeat scroll 0 0 #d05c58;
+    border: medium none;
+    color: white;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 15px;
+    vertical-align: top;
+    margin: 10px 0 0 30px;
+    cursor: pointer;
+}
+#produit_conteneur #right #top #button_location {
+    background: none repeat scroll 0 0 #6162d3;
+    border: medium none;
+    color: white;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 15px;
+    vertical-align: top;
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+}
+#produit_conteneur #right #top #button_achat:hover {
+    background: none repeat scroll 0 0 #d37774;
+    border-bottom: 2px solid #bd4c48;
+}
+#produit_conteneur #right #top #button_location:hover {
+    background: none repeat scroll 0 0 #8384ce;
+    border-bottom: 2px solid #4445a1;
+}
+#produit_conteneur #right #bottom h3
+{
+    color: #8e8e8e;
+    font-family: webly;
+    font-size: 23px;
+    font-weight: lighter;
+    margin: 6px 0 5px 15px;
+}
+#produit_conteneur #right #bottom .obj
+{
+    border: 5px solid #ffffff;
+    display: inline-block;
+    margin: 0 0px 0 30px;
+    outline: 1px solid #bdbdbd;
+    transition: all 0.7s ease 0s;
+    vertical-align: top;
+    width: 130px;
+}
+#produit_conteneur #right #bottom .obj:hover
+{
+    transition: all 0.7s ease 0s;
+    border: 5px solid lightgray;
+}
+#produit_conteneur #right #bottom .select
+{
+    border: 5px solid lightgray;
+}
+#produit_conteneur #right #bottom .obj .title
+{
+    color: #727272;
+    font-size: 18px;
+    margin: 4px;
+}   
+#produit_conteneur #right #bottom .obj .price
+{
+    font-size: 14px;
+    text-align: right;
+    color: #ce5043;
+}
+#produit_conteneur #right #bottom .obj img
+{
+    vertical-align: top;
+}
+#produit_conteneur #center .recherche_h2
+{
+    color: black;
+    font-family: calibri;
+    font-size: 23px;
+    font-weight: normal;
+    margin: 5px 16px;
+}
+#produit_conteneur #center #recherche h3
+{
+    margin: 20px 20px 0 20px;
+}
+
+#produit_conteneur #center #recherche p
+{
+    margin: 0px 20px 0 20px;
+}
+/*********************************/
+/****    Panier properties    ****/
+/*********************************/
+#conteneur_panier
+{
+    margin: 0 auto;
+    width: 1110px;
+    text-align: right;
+}
+#conteneur_panier table
+{
+    background: none repeat scroll 0 0 white;
+    border-collapse: collapse;
+    border-color: lightgrey;
+    color: grey;
+    font-family: Calibri;
+    height: auto;
+    margin-top: 30px;
+    width: 1110px;
+    text-align: left;
+}
+#conteneur_panier table td
+{
+    padding-left: 5px;
+    border-color: lightgrey;
+    text-align: center;
+}
+#conteneur_panier .cadreout
+{
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+#conteneur_panier .cadre2
+{
+    border: 0 solid #000000;
+    display: table-cell;
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+}
+#conteneur_panier .cadre2 img
+{
+    max-height: 100px;
+    max-width: 100px;
+    border: 2px solid #ffffff;
+    outline: 1px solid #bdbdbd;
+}
+#conteneur_panier p
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+#conteneur_panier input[type="submit"]
+{
+    background-color: #14beff;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 7px;
+}
+#conteneur_panier input[type="submit"]:hover
+{
+    background-image: linear-gradient(#7bc9ff, #14beff);
+}
+/*********************************/
+/****   WARNINGS properties   ****/
+/*********************************/
+.xdebug-var-dump
+{
+
+}
+.xdebug-error 
+{
+
+}
+.xe-warning
+{
+
+}
+.xe-parse-error
+{
+
+}
+/*********************************/
+/****    messages d'erreur properties    ****/
+/*********************************/
+#error
+{
+    background: none repeat scroll 0 0 #f9d8df;
+    border: 1px solid #ea707c;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #9a152c;
+    margin: 10px 0 0;
+}
+#correct
+{
+    background: none repeat scroll 0 0 #d0f5c4;
+    border: 1px solid #79d37e;
+    color: #139640;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 0 0;
+}
+/*********************************/
+/****    others properties    ****/
+/*********************************/
+.destroy
+{
+    background: linear-gradient(#f6f6f6, #ececec) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #b4b4b4;
+    border-radius: 9px;
+    color: #8d8d8d;
+    display: inline-block;
+    font-family: calibri;
+    margin: 10px 50px;
+    padding: 1px 9px;
+}
+.destroy:hover
+{
+    background: linear-gradient(#dadada, #f6f6f6) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #747474;
+}

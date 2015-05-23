@@ -1,0 +1,35 @@
+@font-face
+{
+    font-family: "webly";
+    src: url("../fts/weblysleekuil.ttf");
+}
+
+@font-face
+{
+    font-family: "cout";
+    src: url("../fts/couture.ttf");
+}
+
+@font-face
+{
+    font-family: "tond";
+    src: url("../fts/tondu.ttf");
+}
+
+@font-face
+{
+    font-family: "clean";
+    src: url("../fts/clean.ttf");
+}
+
+@font-face
+{
+    font-family: "coolvetica";
+    src: url("../fts/coolvetica.otf");
+}
+
+@font-face
+{
+    font-family: "Source sans pro";
+    src: url("../fts/ssp/SourceSansPro-Black.otf");
+}
